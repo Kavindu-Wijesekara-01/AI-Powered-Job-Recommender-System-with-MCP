@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: job_recommender_app
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
