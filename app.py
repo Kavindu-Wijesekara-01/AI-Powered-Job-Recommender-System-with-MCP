@@ -44,8 +44,10 @@ if uploaded_file is not None:
                     
                 with tab4:
                     st.subheader("Extracted Job Keywords")
-                    keyword_prompt = f"""Analyze the resume and extract the top 3 to 5 most relevant job titles based STRICTLY on the candidate's educational background and experience. 
-                    STRICT RULE: You MUST return ONLY a comma-separated list of job titles (e.g., Accountant, Business Analyst, Teacher, HR Executive, Data Entry, etc.). Do not write any sentences, introductions, or explanations. 
+                    keyword_prompt = f"""You are a career expert. Carefully read the resume below and identify the top 3 to 5 most suitable job titles for this specific candidate.
+                    Base your answer STRICTLY on their actual degree, subjects studied, skills, and any work experience mentioned in the resume.
+                    DO NOT suggest generic or unrelated job titles. For example, do NOT suggest accounting or finance roles unless the resume explicitly mentions finance qualifications.
+                    STRICT OUTPUT RULE: Return ONLY a comma-separated list of job titles. No sentences, no explanations, no bullet points.
                     Resume text: {resume_text}"""
                     keywords = get_llm_response(keyword_prompt)
                     st.info(f"Keywords: {keywords}")
