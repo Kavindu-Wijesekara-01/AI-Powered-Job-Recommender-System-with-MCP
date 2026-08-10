@@ -9,3 +9,9 @@ wheels/
 # Virtual environments
 .venv
 .env
+
+.venv\Scripts\Activate.ps1
+
+# Documentation
+project_explanation_sinhala.txt
+/mlruns
