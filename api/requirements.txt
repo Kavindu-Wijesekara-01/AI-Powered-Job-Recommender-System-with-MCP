@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+groq
+pymupdf
+python-dotenv
+apify-client
+sentence-transformers
+scikit-learn
+numpy
+rapidfuzz
+xgboost
+joblib

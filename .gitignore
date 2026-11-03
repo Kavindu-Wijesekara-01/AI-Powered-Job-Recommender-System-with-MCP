@@ -13,5 +13,5 @@ wheels/
 .venv\Scripts\Activate.ps1
 
 # Documentation
-project_explanation_sinhala.txt
+project_explanation_sinhala.md
 /mlruns
